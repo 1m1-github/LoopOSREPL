@@ -1,7 +1,7 @@
 module LoopOSREPL
 
 using ReplMaker
-using LoopOS: listen, InputPeripheral, state
+using LoopOS: listen, InputPeripheral
 import Base.take!
 
 struct REPLInput <: InputPeripheral
@@ -9,7 +9,7 @@ struct REPLInput <: InputPeripheral
 end
 
 take!(::REPLInput) = take!(REPL.c)
-state(::REPLInput) = "REPLModule.REPL"
+# state(::REPLInput) = "REPLModule.REPL"
 
 const REPL = REPLInput(Channel{String}(10))
 listen(REPL)
