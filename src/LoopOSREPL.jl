@@ -1,8 +1,7 @@
 module LoopOSREPL
 
 using ReplMaker
-using LoopOS: listen, InputPeripheral
-import LoopOS: state
+using LoopOS: listen, InputPeripheral, state
 import Base.take!
 
 struct REPLInput <: InputPeripheral

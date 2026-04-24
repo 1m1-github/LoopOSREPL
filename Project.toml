@@ -1,6 +1,6 @@
 name = "LoopOSREPL"
 uuid = "1eee6eb0-20bd-4409-ab7c-14402db9b7ab"
-version = "2.0.0"
+version = "3.0.0"
 authors = ["1m1 <imi@1m1.io>"]
 
 [deps]
